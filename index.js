@@ -2,7 +2,7 @@ const express=require('express')
 var exphbs  = require('express-handlebars');
 
 const app=express()
-const port=80
+const port=3000
 const path=require('path')
 var hbs = exphbs.create({ /* config */ });
 
