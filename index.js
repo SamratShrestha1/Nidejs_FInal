@@ -17,6 +17,6 @@ app.use(express.static(path.join(__dirname,"static")))
 app.use('/',require(path.join(__dirname,'routers/blog.js')))
 
 
-app.listen(port,()=>{
+app.listen(process.env.PORT || port,()=>{
     console.log('http://localhost:80')
 })
